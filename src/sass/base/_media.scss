@@ -71,4 +71,26 @@
             margin-top: 15px;
         }
     }
+
+    .consultation {
+        .title {
+            text-align: center;
+            font-size: 31px;
+            line-height: 33px;
+        }
+        &__descr {
+            padding: 0px 10px 0px 12px;
+            margin-top: 60px;
+            font-size: 19px;
+            line-height: 22px;
+        }
+        .feed-form {
+            width: 270px;
+            margin-left: 23px;
+            .button_submit {
+                height: 51px;
+                font-size: 14px;
+            }
+        }
+    }
 }
