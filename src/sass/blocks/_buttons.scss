@@ -24,4 +24,18 @@
         height: 40px;
         font-size: 14px;
     }
+    &::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 0%;
+        background-color: darkred;
+        transition: 0.3s all
+    }
+    &:hover {
+        color: darkred;
+        &::after {
+            width: 100%;
+        }
+    }
 }
