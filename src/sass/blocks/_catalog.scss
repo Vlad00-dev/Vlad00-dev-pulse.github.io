@@ -104,6 +104,7 @@
             font-size: 14px;
             font-weight: 300;
             color: #555555;
+            text-decoration: line-through;
         }
         &__price {
             font-size: 20px;
@@ -117,8 +118,9 @@
         &__content {
             width: 50%;
             margin-right: 0px;
-            transform: translateX(-100%);
+            transform: translateX(-110%);
             transition: 0.4s all;
+            line-height: 0;
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;

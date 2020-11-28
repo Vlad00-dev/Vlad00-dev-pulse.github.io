@@ -24,16 +24,27 @@
         height: 40px;
         font-size: 14px;
     }
+    &::before {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0%;
+        background-color: darkred;
+        transition: 0.3s all
+    }
     &::after {
         content: '';
         display: block;
-        height: 1px;
+        height: 2px;
         width: 0%;
         background-color: darkred;
         transition: 0.3s all
     }
     &:hover {
         color: darkred;
+        &::before {
+            width: 100%;
+        }
         &::after {
             width: 100%;
         }
